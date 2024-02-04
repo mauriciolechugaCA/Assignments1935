@@ -1,11 +1,74 @@
+<!-- Mauricio Lechuga - 89522857-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <script type="text/javascript" src="./scripts/script.js"></script>
+
+  <title>The Useless Items Shop</title>
 </head>
+
 <body>
-    
+  <div class="grid">
+
+    <header>
+      <h1>Welcome to The Useless Shop</h1>
+    </header>
+
+    <main>
+      <h2>Embrace the absurd!</h2>
+      <div id="store">
+        <div class="articles">
+          <div class="item">
+            <h3>USB Pet Rock</h3><span class="quantity" id="itemQuantity1"> </span>
+            <p>$14.99</p>
+            <button class="addtocart" onclick="addToCart('USB Pet Rock')">Add to Cart</button>
+          </div>
+          <div class="item">
+            <h3>Silent Alarm Clock</h3><span class="quantity" id="itemQuantity2"> </span>
+            <p>$39.99</p>
+            <button class="addtocart" onclick="addToCart('Silent Alarm Clock')">Add to Cart</button>
+          </div>
+          <div class="item">
+            <h3>Non-stick Glue Stick</h3><span class="quantity" id="itemQuantity3"> </span>
+            <p>$3.99</p>
+            <button class="addtocart" onclick="addToCart('Non-stick Glue Stick')">Add to Cart</button>
+          </div>
+          <div class="item">
+            <h3>Invisible Ink Pen</h3><span class="quantity" id="itemQuantity4"> </span>
+            <p>$8.99</p>
+            <button class="addtocart" onclick="addToCart('Invisible Ink Pen')">Add to Cart</button>
+          </div>
+          <div class="item">
+            <h3>Set of Square Tires</h3><span class="quantity" id="itemQuantity5"> </span>
+            <p>$199.99</p>
+            <button class="addtocart" onclick="addToCart('Set of Square Tires')">Add to Cart</button>
+          </div>
+        </div>
+        <div id="checkout">
+          <button onclick="checkout()" class="checkout">Checkout</button>
+          <button onclick="clearCart()" class="checkout">Clear</button>
+
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <h2>Receipt</h2>
+
+      <div id="receipt">
+
+      </div>
+  </div>
+  </aside>
+  </div>
 </body>
+
 </html>

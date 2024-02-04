@@ -1,0 +1,131 @@
+/* Mauricio Lechuga
+    PROG1935 / W24 / S3 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dbe9ee;
+  margin: 0;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 90vw;
+  grid-template-areas:
+    "header  header  header  header  header"
+    "main    main    main    aside   aside "
+    "main    main    main    aside   aside ";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  background-color: #22334b;
+  color: #dbe9ee;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
+  border-radius: 30px;
+  background-color: #22334b;
+  color: #dbe9ee;
+}
+
+h3 {
+  margin: 0;
+}
+
+main {
+  grid-area: main;
+  background-color: #c0d6df;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #ffbc8c;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+
+aside h2 {
+  background-color: #c55200;
+  min-width: 18rem;
+}
+
+.store {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item p {
+  min-width: 5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.quantity {
+  min-width: 5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.addtocart {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.3em;
+  min-width: 8rem;
+}
+
+.addtocart:hover {
+  background-color: #22334b;
+}
+
+.addtocart:active {
+  background-color: #6e90c4;
+}
+
+#checkout {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0 0 0;
+}
+
+.checkout {
+  background-color: #f5a65b;
+  border-radius: 20px;
+  min-width: 12rem;
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.checkout:hover {
+  background-color: #f96900;
+}
+
+.receipt {
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0.3em;
+  min-width: 10rem;
+}
