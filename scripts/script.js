@@ -83,7 +83,7 @@ function checkout() {
 
   // Used reduce to sum values of cart into a single result.
   const subtotal = cart.reduce(
-    (total, item) => total + item.quantity * item.price,
+    (total, item) => total + item.quantity * item.cost,
     0
   );
   const taxes = subtotal * taxRate;
@@ -100,7 +100,7 @@ function checkout() {
       "     x     " +
       item.product +
       "     |     " +
-      (item.price * item.quantity).toFixed(2) +
+      (item.cost * item.quantity).toFixed(2) +
       "\n";
   });
 
